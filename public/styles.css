@@ -1,0 +1,65 @@
+* {
+    /* background-color: black; */
+    background-color: red;
+    color: white;
+}
+
+li::marker {
+    color: white;
+}
+
+/* Card Dimensions
+    W: 2.5mm 1250px 250px
+    H: 3.5mm 1750px 350px
+
+*/
+
+#hobby-card-deck {
+    /* position: absolute; */
+    width: 300px;
+    height: 400px;
+    background-color: #695c5c;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: -1000;
+    
+
+}
+
+.hobby-card {
+    width: 250px;
+    height: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: move; 
+
+    /* display: flex; */
+    display: flex;
+    z-index: 0;
+  
+    /* Critical rules for movement */
+    position: absolute; 
+    user-select: none;
+}
+
+.hobby-card img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    
+    pointer-events: none;
+    user-select: none;
+}
+
+.hobby-card p{
+    background-color: inherit;
+    color: black;
+    font-size: 2em;
+
+    text-align: center;
+    margin: auto;
+    display: flex;
+}

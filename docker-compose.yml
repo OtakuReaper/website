@@ -1,0 +1,12 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: garden
+    ports:
+      - "8080:80"
+    volumes:
+      #This is for the website
+      - ./public:/usr/share/nginx/html:ro
+      #This is for the configurations file
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: always
