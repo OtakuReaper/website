@@ -1,5 +1,3 @@
-console.log("working!");
-
 //HOBBY CARDS
 const hobbyDeck = document.getElementById('hobby-card-deck');
 const bounds = hobbyDeck.getBoundingClientRect();
