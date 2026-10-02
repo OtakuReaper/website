@@ -3,7 +3,7 @@ body {
     background-color: #DDCDB4;
 }
 
-p, h1 {
+p, h1, h2, h3, h4, li::marker, li {
     color:#301F0B;
     text-shadow: 2px 0 0 #ffffff, -2px 0 0 #ffffff, 0 -2px 0 #ffffff, 0 2px 0 #ffffff;
 }
@@ -50,7 +50,7 @@ a:hover {
     padding-inline: 4px;
 }
 
-#top-navigation div a:hover, #top-navigation h1 a:hover, .dropdown-nav ul li a:hover{
+#top-navigation div a:hover, #top-navigation h1 a:hover, .dropdown-nav ul li a:hover, a:hover{
     padding: 0px;
     margin: 0px;
     /* background-color: #ffffff; */
@@ -78,11 +78,6 @@ a:hover {
     margin-bottom: 2px;
 }
 
-
-li::marker {
-    color: white;
-}
-
 #main-content {
     margin-top: 15px;
     border: 2px solid #301F0B;
@@ -93,4 +88,6 @@ li::marker {
 
 #main-content h1 {
     padding-inline: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
